@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Train Schedule</title>
+    <link rel="stylesheet" href="assets/css/animate.css">
+    <link rel="stylesheet" type="text/css" href="assets/css/reset.css">
+    <link rel="stylesheet" type="text/css" href="assets/css/style.css">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.2.0/css/all.css" integrity="sha384-hWVjflwFxL6sNzntih27bfxkr27PmbbK/iSvJ+a4+0owXq79v+lsFkW54bOGbiDQ" crossorigin="anonymous">
+    <link href="https://fonts.googleapis.com/css?family=Righteous" rel="stylesheet">
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+</head>
+<body>
+
+    <div class="main-container">
+        <header>
+            <h1 class ="animated pulse infinite"><span>T</span><span>r</span>ain Scheduler</h1>
+        </header>
+       
+        <section class="goBelow">
+            <h3 class="crntTrnSchd">Current Train Schedule</h3>
+            <div class="card-body">
+                <table class="table">
+                    <thead>
+                        <tr>
+                            <th scope="col">Train Name</th>
+                            <th scope="col">Desination</th>
+                            <th scope="col">Frequency (min)</th>
+                            <th scope="col">Next Arrival</th>
+                            <th scope="col">Minutes Away</th>
+                            <th><i class="fa fa-trash fa-2x"></i></th>
+                        </tr>
+                    </thead>
+                    <tbody id="full-schedule-list">
+                    </tbody>
+                </table>  
+                <div class="text-center">
+                    <button id="add-train-btn" type="submit">Add Train</button>
+             </div>   
+            </div>
+        </section>
+
+
+        <section id="add-panel " class="formInput">
+            <h3 class="addTrain">Add Train</h3>
+            <form>
+                <h5 class="hello">Train Name: </h5><br>
+                    <input type="text" id="train-input">
+                <h5>Destination: </h5><br>
+                    <input type="text" id="destination-input">
+                <h5>First Train Time(HH:mm A): </h5><br>
+                    <input type="time" id="first-train-input">
+                <h5>Frequency (min): </h5><br>
+                    <input type="number" id="frequency-input"><br>
+                    <input type="submit" value="Update" id="updateTrain">
+            </form>
+        </section>
+        
+        
+    </div>
+
+    <script src="https://www.gstatic.com/firebasejs/5.3.0/firebase.js"></script>
+    <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/moment.js/2.22.2/moment.min.js"></script>
+    <script type="text/javascript" src="assets/javascript/app.js"></script>
+    <script src="https://use.fontawesome.com/releases/v5.2.0/js/all.js" data-auto-replace-svg="nest"></script>
+</body>
+</html>

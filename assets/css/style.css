@@ -1,0 +1,218 @@
+body {
+    background: url(../images/train_1.jpg);
+    background-repeat: no-repeat;
+    background-size:cover;
+    background-attachment: fixed;
+    background-position: center;
+    margin:0;
+    padding:0;
+}
+
+.main-container {
+    width:90vw;
+    margin:0 auto;
+}
+
+h1 {
+    margin-top:1vw;
+    text-align:center;
+    background:rgba(0,0,0,0.3);
+    color:rgb(36, 69, 107);
+    font-size: 7vw;
+    padding:4vw;
+    font-family: 'Righteous', cursive;
+    border-radius: 55px 55px 0px 0px;
+}
+
+.goBelow {     
+    margin-top:-4vw;            
+}
+
+h3 {
+    font-family:Arial, Helvetica, sans-serif;
+    color:white;
+    padding:1.2vw;
+    margin-left:2vw;
+    
+}
+
+.addTrain {
+    margin-bottom:-2.5vw;
+}
+
+h5 {
+    
+    font-family:Arial, Helvetica, sans-serif;
+    font-size:1.7vw;
+    margin-bottom:-1vw;
+    margin-left:.5vw;
+    
+}
+
+.hello {
+    padding-top:1.9vw;
+    
+}
+
+section {
+    background: rgb(35, 52, 70, 0.7);
+    /* position: absolute; */
+    width:90vw;
+    
+}
+
+.formInput {
+    border-radius: 0px 0px 55px 55px;
+    /* display: none; */
+    background: rgb(35, 52, 70, 0.5);
+    /* margin-bottom:2vh;    */
+}
+
+form {
+    border-radius: 0px 0px 55px 55px;
+    
+    
+    background: rgb(104, 123, 141, 0.5);
+    margin:.5vw;
+}
+
+input {
+    background: rgb(223, 222, 222);
+    margin-left:.5vw;
+    width:50%;
+    
+    -webkit-transition: width 0.4s ease-in-out;
+    transition: width 0.4s ease-in-out;
+}
+input:focus {
+    width:90%;
+    
+}
+
+@keyframes colorchange
+    {
+      0%   {background: rgb(28, 51, 73);}
+      25%  {background: rgb(92, 106, 134);}
+      50%  {background: #68cddf;}
+      25%  {background: #035083}
+      0% {background: rgb(103, 126, 149);}
+    } 
+@-webkit-keyframes colorchange
+    {
+        0%   {background: rgb(28, 51, 73);}
+        25%  {background: rgb(92, 106, 134);}
+        50%  {background: #68cddf;}
+        25%  {background: #035083}
+        0% {background: rgb(103, 126, 149);}
+    }
+#updateTrain {
+    margin:2vw;
+    background: #234;
+    color:white;
+    border:none;
+    padding:1vw;
+    width:10%;
+    border-radius:15px;
+    cursor: pointer;
+}
+
+#updateTrain:hover {
+    box-shadow: 0 12px 16px 0 rgba(0,0,0,0.24),0 17px 50px 0 rgba(0,0,0,0.19);
+}
+
+#updateTrain:active {
+    
+    box-shadow: 0 5px #666;
+    transform: translateY(4px);
+}
+th {
+    font-size:1.4vw;
+}
+
+tr{
+    width:86.5vw;
+    background:#ebebeb;
+    display:grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr 1fr 1fr;
+    padding:1.2vw;
+    margin:.3vw;
+    font-size:1.2vw;
+    font-family:Arial, Helvetica, sans-serif;
+}
+
+
+
+#add-train-btn {
+    border:none;
+    position:relative;
+    padding:1.5vw;
+    left:45.8%;
+    font-size:1.4vw;
+    font-family: 'Righteous', cursive;
+    margin-bottom:.5vw;
+    border-radius:15px;
+    /* animation:colorchange infinite ease-in-out 5s; */
+    cursor: pointer;
+    overflow: hidden;
+    
+}
+
+#add-train-btn:hover {
+    background:#d1d1d1;
+    box-shadow: 0 12px 16px 0 rgba(0,0,0,0.24),0 17px 50px 0 rgba(0,0,0,0.19);
+}
+
+#add-train-btn:active {
+    
+    box-shadow: 0 5px #666;
+    transform: translateY(4px);
+}
+
+#add-train-btn:after {
+    content: "";
+    background: #2e2e50;
+    display: block;
+    position: absolute;
+    padding-top: 300%;
+    padding-left: 350%;
+    margin-left: -20px !important;
+    margin-top: -120%;
+    opacity: 0;
+    transition: all 01.5s
+}
+
+#add-train-btn:active:after {
+    padding: 0;
+    margin: 0;
+    opacity: 1;
+    transition: 0s
+}
+
+#full-schedule-list {
+    text-align:center;
+    
+}
+
+.remove-train{
+    border:none;
+    background: rgb(45, 116, 187);
+    height:3vw;
+    border-radius:15px;
+    color:white;
+    font-size:1.3vw;
+    font-family: 'FontAwesome';content: '\f100';
+}
+
+.remove-train:hover {
+    background: rgb(13, 35, 56);
+    transition:1s;
+    color:rgb(255, 157, 0);
+    box-shadow: 0 12px 16px 0 rgba(0,0,0,0.24),0 17px 50px 0 rgba(0,0,0,0.19);
+    cursor: pointer;
+}
+
+.remove-train:active {
+    
+    box-shadow: 0 5px #666;
+    transform: translateY(4px);
+}
